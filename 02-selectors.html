@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基本的CSS选择器</title>
+    <style>
+      /* 元素选择器 */
+      body {
+        background-color: #333;
+      }
+      /* #是ID选择器 */
+      #welcome {
+        background-color: #f4f4f4;
+      }
+
+      #about {
+        color: white;
+      }
+      /* .是类选择器 */
+      .primary-heading {
+        color: blue;
+      }
+      /* ,是多项选择器 */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      /*嵌套选择器 */
+      #welcome p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">欢迎来到我的博客</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+        exercitationem reprehenderit eos corporis vel molestias laborum
+        blanditiis repellendus dolore sequi sapiente eius, magnam harum ut sint
+        nam. Ipsum, odit blanditiis.
+      </p>
+    </div>
+    <div id="about">
+      <h2>关于我们</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi sed
+        aspernatur deserunt enim accusantium in placeat atque rem maiores?
+      </p>
+    </div>
+  </body>
+</html>

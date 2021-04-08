@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>表单样式</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* 
+       -是否需要添加怪异盒模型来避免因为元素padding值的设置导致盒模型大小变化？
+        -重置margin和padding，清除浏览器默认样式 
+       */
+      }
+
+      body {
+        /* 
+          -设置背景颜色为#344a72
+        */
+      }
+
+      a {
+        /* 
+       -消除默认下划线
+       */
+      }
+
+      #container {
+        /* 
+        -实现整体内容居中，可以使用 margin: auto （注意：此属性对于块元素有效） 
+        -可以设置max-width流体宽度，实现简单的响应式效果
+        -可以考虑添加一些padding进行填充
+        */
+      }
+
+      .form-wrap {
+        /* 
+          -页面中包裹表单的容器（白色区域）
+        */
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        /* 
+          -文本内容可以进行居中
+        */
+      }
+
+      .form-wrap .form-group {
+        /* 
+          -每个label、input可以包裹在form-group里面
+        */
+      }
+
+      .form-wrap .form-group label {
+        /* 
+          -是否需要将label内联元素转换为块元素
+        */
+      }
+
+      .form-wrap .form-group input {
+        /* 
+        -input标签可以100%贯穿整个form-wrap,并且添加一些padding。
+        */
+      }
+
+      .form-wrap button {
+        /* 
+        -butn按钮可以100%贯穿wrap，同时设置显示效果为块元素。 
+        -按钮背景色为 #49c1a2
+        */
+      }
+
+      .form-wrap button:hover {
+        /* 
+        -按钮悬停背景色为#37a08e
+        */
+      }
+
+      .form-wrap .bottom-text {
+        /* 
+          -底部文本字体可以小一些
+        */
+      }
+
+      footer {
+        /* 
+        -整体进行居中
+       */
+      }
+
+      footer a {
+        /*
+          -底部链接字体颜色为 #49c1a2
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>注册</h1>
+        <p>只需几分钟，实现免费注册</p>
+        <form>
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password2">确认密码</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">注册</button>
+          <p class="bottom-text">
+            请仔细阅读
+            <a href="#">条件</a> 和
+            <a href="#">隐私政策</a>条款，如果同意请点击注册按钮
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>已经拥有账户？<a href="#">去登录</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

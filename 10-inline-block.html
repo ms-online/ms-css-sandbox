@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS内联和块元素</title>
+    <style>
+      /* 块-->内联 */
+      li {
+        display: inline;
+      }
+      li a {
+        padding-right: 20px;
+      }
+      /* 内联-->块 */
+      img {
+        display: block;
+        margin: auto;
+      }
+      /* 块-->内联+块 */
+      .box {
+        width: 32.5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+    <br />
+    <br />
+    <img src="./images//logo.png" alt="" />
+    <br />
+    <div class="box">
+      <h3>标题一</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        reprehenderit illum molestiae beatae architecto nam assumenda quaerat
+        quam ipsa sed!
+      </p>
+    </div>
+    <div class="box">
+      <h3>标题二</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        reprehenderit illum molestiae beatae architecto nam assumenda quaerat
+        quam ipsa sed!
+      </p>
+    </div>
+    <div class="box">
+      <h3>标题三</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        reprehenderit illum molestiae beatae architecto nam assumenda quaerat
+        quam ipsa sed!
+      </p>
+    </div>
+  </body>
+</html>
